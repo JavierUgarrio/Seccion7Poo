@@ -1,3 +1,6 @@
+
+import clases.Persona;
+
 public class Main {
 
     /**
