@@ -1,5 +1,6 @@
 
 import clases.Persona;
+import clases.Calculadora;
 
 public class Main {
 
@@ -19,6 +20,11 @@ public class Main {
         persona2.nombre="Maria";
         persona2.edad= 21;
         persona2.mostrarDatos();
+        
+        
+        System.out.println(Calculadora.PI);
+        
+        System.out.println(Calculadora.sumar(3, 7));
     }
     
 }
