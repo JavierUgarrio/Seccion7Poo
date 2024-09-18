@@ -21,6 +21,8 @@ public class Main {
         persona2.edad= 21;
         persona2.mostrarDatos();
         
+        Persona persona3= new Persona("Miguel");
+        
         
         System.out.println(Calculadora.PI);
         
