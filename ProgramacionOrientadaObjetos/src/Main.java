@@ -1,6 +1,7 @@
 
 import clases.Persona;
 import clases.Calculadora;
+import clases.Rectangulo;
 
 public class Main {
 
@@ -27,6 +28,10 @@ public class Main {
         System.out.println(Calculadora.PI);
         
         System.out.println(Calculadora.sumar(3, 7));
+        
+        
+        Rectangulo r1 = new Rectangulo();
+        System.out.println(r1.areaRectangulo(8, 4));
     }
     
 }
