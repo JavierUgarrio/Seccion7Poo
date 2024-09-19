@@ -44,4 +44,11 @@ public class Persona {
     public void esEliminado(boolean eliminado){
         this.eliminar = eliminado;
     }
+    
+    //toString
+    @Override //anotado modifica un metodo ya creado en java
+    public String toString(){
+        return "Personas: [Nombre: %S, Edad: %d, Eliminado: %b]"
+                .formatted(this.nombre, this.edad, this.eliminar);
+    } 
 }

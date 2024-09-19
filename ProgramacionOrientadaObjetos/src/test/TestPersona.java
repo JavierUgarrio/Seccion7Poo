@@ -14,5 +14,6 @@ public class TestPersona {
         persona1.setEdad(32);
         
         System.out.println(persona1.getEdad());
+        System.out.println(persona1.toString());
     }
 }
