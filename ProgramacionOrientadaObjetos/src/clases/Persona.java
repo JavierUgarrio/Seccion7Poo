@@ -13,6 +13,7 @@ public class Persona {
     public Persona(String nombre){
         System.out.println("Construyendo con nombre: " +nombre);
     }
+   
     
     //metodos
     public void mostrarDatos(){
