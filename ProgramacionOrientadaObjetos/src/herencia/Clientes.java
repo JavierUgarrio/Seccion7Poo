@@ -48,7 +48,10 @@ public class Clientes extends Persona {
     }
 
    //toString
-
+    @Override
+    public String obtenerDetalle(){
+        return super.obtenerDetalle()+ " Vip: " +this.vip;
+    }
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

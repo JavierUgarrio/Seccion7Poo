@@ -34,7 +34,11 @@ public class Empleado extends Persona{
     }
 
     //toString
-
+    @Override
+    public String obtenerDetalle(){
+        return super.obtenerDetalle() + "Sueldo: " + this.sueldo;
+    }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

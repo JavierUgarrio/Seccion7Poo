@@ -73,6 +73,9 @@ public class Persona {
         this.direccion = direccion;
     }
     
+    public String obtenerDetalle(){
+        return "Nombre: %s Edad: %d".formatted(this.nombre, this.edad);
+    }
     //toString
     @Override
     public String toString() {
