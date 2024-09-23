@@ -32,9 +32,24 @@ public class TestHerencia {
        System.out.println(cliente1.obtenerDetalle());
        Clientes cliente2 = new Clientes(2, fecha, false,"Leire",12,"Garcia",'F',"calle de la cordura Malaga");
        imprimir(cliente2);
+       determinarTipo(empleado1);
+       determinarTipo(cliente1);
+       determinarTipo(persona1);
    } 
    //funcion para llamar a los diferentes metodos que se encuentran en las clases y utilizarlo como si fuera uno
    public static void imprimir(Persona persona){
        System.out.println(persona.obtenerDetalle());
+   }
+   //Comparacion de objetos utilizando InstanceOf, las comparaciones se tiene que hacer de menos generica a mas generica
+   public static void determinarTipo(Object objeto){
+       if(objeto instanceof Empleado){
+           System.out.println("es de tipo empleado");
+       }else if(objeto instanceof Clientes){
+           System.out.println("es de tipo cliente");
+       }else if(objeto instanceof Persona){
+           System.out.println("es de tipo Persona");
+       }else if(objeto instanceof Object){
+           System.out.println("es de tipo objeto");
+       }
    }
 }
