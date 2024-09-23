@@ -46,6 +46,13 @@ public class TestHerencia {
        Persona persona5 = empleado1;
        System.out.println(persona5.obtenerDetalle());
        
+       Persona p1 = new Persona("Javier",12,"Perez",'M',"calle mayor 15 Leon");
+       Persona p2 = new Persona("Jose",12,"Perez",'M',"calle mayor 15 Leon");
+       
+       System.out.println(p1.equals(p2));
+       System.out.println(p1.hashCode());
+       System.out.println(p2.hashCode());
+       
    } 
    //funcion para llamar a los diferentes metodos que se encuentran en las clases y utilizarlo como si fuera uno
    public static void imprimir(Persona persona){
