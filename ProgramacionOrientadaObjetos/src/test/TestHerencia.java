@@ -35,6 +35,17 @@ public class TestHerencia {
        determinarTipo(empleado1);
        determinarTipo(cliente1);
        determinarTipo(persona1);
+       
+       //realizar conversion de objetos DOWNCASTING (de padre a hija)
+       Persona persona4 = new Empleado(3,2500,"Lara");
+       Empleado empleado4 =(Empleado)persona4; //convierto el objeto "persona4" a un objeto de tipo empleado 
+       empleado4.getSueldo();
+       System.out.println(empleado4.obtenerDetalle());
+       
+       //realizar conversion de objetos Upcasting (de hija a padre)
+       Persona persona5 = empleado1;
+       System.out.println(persona5.obtenerDetalle());
+       
    } 
    //funcion para llamar a los diferentes metodos que se encuentran en las clases y utilizarlo como si fuera uno
    public static void imprimir(Persona persona){
