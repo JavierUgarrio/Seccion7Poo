@@ -8,6 +8,40 @@ package abstractas;
  *
  * @author User
  */
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
+    //Atributos
+    protected String tipoFigura;
+    
+    //Constructor
+    protected FiguraGeometrica(String tipoFigura){
+        this.tipoFigura = tipoFigura;
+    }
+    
+    //metodo abstracto
+    //Definicion metodo abstracto
+    public abstract void pintarFigura();
+    
+    //Get & Set
+
+    public String getTipoFigura() {
+        return tipoFigura;
+    }
+
+    public void setTipoFigura(String tipoFigura) {
+        this.tipoFigura = tipoFigura;
+    }
+    
+    //toString
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("FiguraGeometrica{");
+        sb.append("tipoFigura=").append(tipoFigura);
+        sb.append('}');
+        return sb.toString();
+    }
+    
+    
     
 }
