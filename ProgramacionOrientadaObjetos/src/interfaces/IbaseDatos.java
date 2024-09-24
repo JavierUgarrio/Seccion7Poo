@@ -9,5 +9,12 @@ package interfaces;
  * @author User
  */
 public interface IbaseDatos {
+    int MAXIMO_DATOS = 10;
+    
+    void insertar();
+    void listar();
+    void actualizar();
+    void eliminar();
+    
     
 }
