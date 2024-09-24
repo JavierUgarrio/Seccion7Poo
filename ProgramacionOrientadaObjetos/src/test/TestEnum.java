@@ -4,10 +4,13 @@
  */
 package test;
 import enumeraciones.Dias;
+import enumeraciones.Continentes;
 
 public class TestEnum {
    public static void main(String [] args){
        System.out.println(Dias.LUNES);
        System.out.println(Dias.DOMINGO);
+       System.out.println(Continentes.America);
+       System.out.println(Continentes.America.getPaises());
    } 
 }
