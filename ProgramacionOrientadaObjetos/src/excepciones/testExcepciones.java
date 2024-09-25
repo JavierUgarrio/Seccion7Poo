@@ -21,15 +21,15 @@ public class testExcepciones {
                 int n1 = leer.nextInt();
                 System.out.println("Ingrese n2: ");
                 int n2 = leer.nextInt();
-                int resultado = n1 / n2;
+                int resultado = dividir(n1, n2);
                 System.out.println(resultado);
                 continuarEjeccucion = false;
             } catch (java.util.InputMismatchException e) {
                 System.err.println("Ocurrio un error: Ingrese solo numeros enteros");
                 e.printStackTrace(System.out);
                 leer.nextLine();
-            } catch (ArithmeticException e) {
-                System.out.println("Ocurrio un error: No se puede dividir entre 0");
+            } catch (OperadorExcepcion e) {
+                System.out.println("Error: " + e.getMessage());
                 e.printStackTrace(System.out);
             } catch (Exception e) {
                 e.printStackTrace(System.out);
@@ -38,5 +38,13 @@ public class testExcepciones {
             }
         }while(continuarEjeccucion);
         
+    }
+    
+    //crear una excepcion
+    static int dividir(int n1, int n2) throws OperadorExcepcion {
+        if(n2 ==0){
+            throw new OperadorExcepcion("Dividir entre 0");
+        }
+        return n1/n2;
     }
 }
