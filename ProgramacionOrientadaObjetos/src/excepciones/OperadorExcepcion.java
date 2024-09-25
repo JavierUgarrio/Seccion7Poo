@@ -8,6 +8,8 @@ package excepciones;
  *
  * @author User
  */
+
+//Si ponemos RuntimeExcepcion no es necesario añadir el "throws OperadorExcepcion" en la funcion donde estas creando la excepcion
 public class OperadorExcepcion extends Exception {
     
     //Constructor
