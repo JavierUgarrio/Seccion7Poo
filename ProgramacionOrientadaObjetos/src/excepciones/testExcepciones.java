@@ -22,8 +22,15 @@ public class testExcepciones {
             int resultado = n1/n2;
             System.out.println(resultado);
         }catch(java.util.InputMismatchException e){
-            System.err.println("Ingrese solo numeros enteros");
+            System.err.println("Ocurrio un error: Ingrese solo numeros enteros");
             e.printStackTrace(System.out);
+        }catch(ArithmeticException e){
+            System.out.println("Ocurrio un error: No se puede dividir entre 0");
+            e.printStackTrace(System.out);
+        }catch(Exception e){
+            e.printStackTrace(System.out);
+        }finally{
+            System.out.println("Se reviso la división");
         }
         
         
